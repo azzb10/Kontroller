@@ -34,6 +34,7 @@ android {
             enableSplit = true
         }
     }
+    namespace 'com.github.roarappstudio.btkontroller'
 }
 
 dependencies {
