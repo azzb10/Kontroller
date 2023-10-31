@@ -75,7 +75,7 @@ open class KeyboardSender(
     fun sendKeyboard(keyCode : Int, event : KeyEvent, modifier_checked_state :Int): Boolean {
 
 
-        return keyEventHandler(event.keyCode,event,modifier_checked_state,keyCode)
+        return keyEventHandler(keyCode,event,modifier_checked_state,keyCode)
 
 
 //        return when (event.keyCode) {
