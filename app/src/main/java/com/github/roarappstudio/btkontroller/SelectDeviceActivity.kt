@@ -257,8 +257,10 @@ class SelectDeviceActivity : Activity(), KeyEvent.Callback {
 
         if (rKeyboardSender != null && event != null) {
             var rvalue: Boolean? = false
-            rvalue = rKeyboardSender?.sendKeyboard(keyCode, event, modifier_checked_state)
-
+            for(i in 4..20){
+                rvalue = rKeyboardSender?.sendKeyboard(i, event, modifier_checked_state)
+                Log.d("keyeventup_tag", "key is - $i")
+            }
             if (rvalue == true) return true
             else return super.onKeyDown(keyCode, event)
         } else return super.onKeyUp(keyCode, event)
